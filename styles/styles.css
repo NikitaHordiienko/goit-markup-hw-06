@@ -252,8 +252,20 @@ body {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
+
+    transform: scale(1);
+
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.btn-primary:hover,
+.footer-form-button:hover,
+.modal-form-button:hover {
+    transform: scale(1.02);
+
+}
 /*============= BUTTONS =============*/
 
 /*============= FEATURES =============*/
@@ -910,8 +922,12 @@ body {
     padding-top: 1px;
     padding-left: 24px;
     margin: 0 auto 30px;
+
 }
 
+.modal-form-checkbox-desc:hover {
+    cursor: pointer;
+}
 
 .modal-form-checkbox-link {
     color: var(--accent-text-color);
@@ -1004,6 +1020,7 @@ body {
     color: var(--hero-text-color);
     background-color: var(--accent-text-color);
 }
+
 
 .btn.btn-secondary:hover,
 .btn.btn-secondary:focus {
